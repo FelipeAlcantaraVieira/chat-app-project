@@ -39,7 +39,7 @@ export default useSignup
 function handleInputErrors({ fullName, username, password, confirmPassword, gender }) {
     const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
     if (!fullName || !username || !password || !confirmPassword || !gender) {
-        toast.error("Please fill all the fields")
+        toast.error("Please fill in all the fields")
         console.log({ fullName, username, password, confirmPassword, gender });
         return false;
     }
